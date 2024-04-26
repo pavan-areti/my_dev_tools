@@ -23,12 +23,14 @@ a {
 
 body {
     background-color: #1e1c1c;
-    padding: 50px;
 }
 
 .container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -50,3 +52,4 @@ body {
 .card:hover{
  transform: scale(1.1);
 }
+
