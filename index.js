@@ -31,7 +31,9 @@ app.get('/client-redirect',(req,res)=>{
 app.get('/meta-redirect',(req,res)=>{
     res.sendFile(__dirname+'/meta-redirect.html');
 });
-app.listen(3000, () => {
+
+var port = process.env.PORT || 3000;
+app.listen(port, () => {
   console.log('Example app listening on port 3000!');
 });
 
