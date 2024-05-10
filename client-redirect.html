@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>client-redirect</title>
     <script>
+        const randomNumber1 = Math.floor(Math.random() * 100) + 1;
+        const randomNumber2 = Math.floor(Math.random() * 100) + 1;
+
         function redirectToGoogle() {
-            window.location.href = "/server-redirect";
+            window.location.href = `/server-redirect?qp1_id=${randomNumber1}&qp2_id=${randomNumber2}`;
         }
         redirectToGoogle();
     </script>   

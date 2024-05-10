@@ -13,9 +13,23 @@
 
 <body>
     <div class="container">
-        <a href="/server-redirect"><div class="card">ServerSide Redirect</div></a>
-        <a href="/client-redirect"><div class="card">ClientSide Redirect</div></a>
-        <a href="/meta-redirect"><div class="card">Meta Redirect</div></a>
+        <!-- server side redirect in same tab with query param -->
+        <a href="/server-redirect?ssr_page_id=236">
+            <div class="card">ServerSide Redirect</div>
+        </a>
+        <!-- client side redirect in same tab with query param -->
+        <a href="/client-redirect?csr_page_id=235">
+            <div class="card">ClientSide Redirect</div>
+        </a>
+        <!-- meta redirect -->
+        <a href="/meta-redirect">
+            <div class="card">Meta Redirect</div>
+        </a>
+        <!-- client side redirect that happens in new tab -->
+        <a href="/client-redirect?csr_tabpage_id=237" target="_blank">
+            <div class="card">Opens new Tab with client-side redirect</div>
+        </a>
+        <iframe src="iframe.html" width="400" height="400"></iframe>   
     </div>
 </body>
 
