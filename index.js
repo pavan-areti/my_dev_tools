@@ -22,7 +22,7 @@ app.get('/redirect-chain-1', (req, res) => {
 });
 
 app.get('/redirect-chain-2', (req, res) => {
-    res.redirect("https://www.google.com");
+    res.redirect("https://testsafebrowsing.appspot.com/");
 });
 
 app.get('/client-redirect', (req, res) => {
